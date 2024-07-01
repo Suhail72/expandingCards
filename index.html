@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP INPUT FIELD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="prompt">
+        enter the code genearated on your mobile device to log in!
+    </div>
+    <form  method="get" class="digit-group" data-group-name="digits" data-autosubmit="false"
+    autocomplete="off">
+    <input type="text" id="digit1" name="digit1" data-next="digit2" />
+    <input type="text" id="digit2" name="digit2" data-next="digit3" data-previous="digit1" />
+    <input type="text" id="digit3" name="digit3" data-next="digit4" data-previous="digit2" />
+    <input type="text" id="digit4" name="digit4" data-previous="digit3" />
+</form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="app.js"></script>
+    
+</body>
+</html>
